@@ -159,6 +159,164 @@ ul {
   padding-left: 22px;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.blog-page {
+  background: #f8f9fb;
+  color: #26313f;
+}
+
+.back-home {
+  position: fixed;
+  top: 22px;
+  left: 24px;
+  z-index: 10;
+  padding: 8px 14px;
+  border-radius: 999px;
+  color: #c93f7c;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid #ffd2e5;
+  box-shadow: 0 8px 20px rgba(216, 79, 139, 0.12);
+  font-weight: 600;
+}
+
+.blog-hero {
+  text-align: center;
+  padding: 14px 20px 34px;
+  border-bottom: 1px solid #e7e9ee;
+}
+
+.blog-avatar {
+  width: 132px;
+  height: 132px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 2px solid #d8dde7;
+  background: white;
+}
+
+.blog-hero h1 {
+  margin: 8px 0 4px;
+  color: #26313f;
+  font-family: Georgia, "Times New Roman", "Microsoft YaHei", serif;
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.blog-hero p {
+  margin: 0;
+  color: #8290a3;
+  font-size: 19px;
+}
+
+.blog-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 34px;
+  margin-top: 46px;
+  font-size: 20px;
+}
+
+.blog-tabs a {
+  color: #0b6bd3;
+}
+
+.blog-tabs a:hover,
+.blog-tabs a.active {
+  color: #c93f7c;
+}
+
+.blog-main {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 72px 24px 56px;
+}
+
+.search-box {
+  display: block;
+  margin-bottom: 34px;
+}
+
+.search-box input {
+  width: 100%;
+  height: 44px;
+  padding: 0 20px;
+  border: 1px solid #b9d2e8;
+  border-radius: 999px;
+  background: #f6f7f9;
+  color: #26313f;
+  font-size: 18px;
+  box-shadow: 0 0 0 2px rgba(153, 190, 224, 0.12), 0 8px 18px rgba(91, 135, 176, 0.16);
+}
+
+.search-box input:focus {
+  outline: 2px solid #d84f8b;
+  border-color: #d84f8b;
+}
+
+.post-preview {
+  padding: 34px 0 42px;
+  border-bottom: 1px solid #e4e7ec;
+}
+
+.post-preview h2 {
+  margin: 0 0 8px;
+  color: #273241;
+  font-family: Georgia, "Times New Roman", "Microsoft YaHei", serif;
+  font-size: 34px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 18px;
+  color: #7b8795;
+  font-size: 16px;
+}
+
+.post-meta span {
+  padding: 1px 8px;
+  border-radius: 4px;
+  background: #eef1f5;
+  color: #2f3a48;
+}
+
+.post-preview p {
+  margin: 0 0 22px;
+  font-size: 19px;
+  line-height: 1.9;
+}
+
+.read-more {
+  color: #0b6bd3;
+  font-size: 18px;
+}
+
+.blog-categories {
+  padding-top: 34px;
+}
+
+.blog-categories h2 {
+  margin: 0 0 10px;
+  color: #26313f;
+  font-size: 24px;
+}
+
 /* 手机端适配 */
 @media (max-width: 800px) {
   .layout {
@@ -182,5 +340,42 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .back-home {
+    position: static;
+    display: inline-block;
+    margin: 14px 0 0 14px;
+  }
+
+  .blog-hero {
+    padding-top: 12px;
+  }
+
+  .blog-avatar {
+    width: 104px;
+    height: 104px;
+  }
+
+  .blog-hero h1 {
+    font-size: 32px;
+  }
+
+  .blog-tabs {
+    gap: 22px;
+    margin-top: 30px;
+    font-size: 18px;
+  }
+
+  .blog-main {
+    padding: 38px 20px 42px;
+  }
+
+  .post-preview h2 {
+    font-size: 26px;
+  }
+
+  .post-preview p {
+    font-size: 17px;
   }
 }
